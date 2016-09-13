@@ -4,7 +4,7 @@ MAINTAINER kevin zhangkefa@yihecloud.com
 
 WORKDIR /program
 
-COPY docker/startup.sh /program/startup.sh
+COPY startup.sh /program/startup.sh
 RUN chmod +x /program/startup.sh
 
 COPY target/rundocker-1.0.jar /program/app.jar
